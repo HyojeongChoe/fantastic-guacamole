@@ -1,0 +1,10 @@
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_01_chap05\bin\Debug\HelloCSharp03_01_chap05.exe.config
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_01_chap05\bin\Debug\HelloCSharp03_01_chap05.exe
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_01_chap05\bin\Debug\HelloCSharp03_01_chap05.pdb
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_01_chap05\obj\Debug\HelloCSharp03_01_chap05.csproj.AssemblyReference.cache
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_01_chap05\obj\Debug\HelloCSharp03_01_chap05.Form1.resources
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_01_chap05\obj\Debug\HelloCSharp03_01_chap05.Properties.Resources.resources
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_01_chap05\obj\Debug\HelloCSharp03_01_chap05.csproj.GenerateResource.cache
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_01_chap05\obj\Debug\HelloCSharp03_01_chap05.csproj.CoreCompileInputs.cache
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_01_chap05\obj\Debug\HelloCSharp03_01_chap05.exe
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_01_chap05\obj\Debug\HelloCSharp03_01_chap05.pdb

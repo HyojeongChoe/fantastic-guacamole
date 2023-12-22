@@ -1,0 +1,7 @@
+D:\work\AI11_lecture\CSharp\HelloCSharp01\Solve\bin\Debug\Solve.exe.config
+D:\work\AI11_lecture\CSharp\HelloCSharp01\Solve\bin\Debug\Solve.exe
+D:\work\AI11_lecture\CSharp\HelloCSharp01\Solve\bin\Debug\Solve.pdb
+D:\work\AI11_lecture\CSharp\HelloCSharp01\Solve\obj\Debug\Solve.csproj.AssemblyReference.cache
+D:\work\AI11_lecture\CSharp\HelloCSharp01\Solve\obj\Debug\Solve.csproj.CoreCompileInputs.cache
+D:\work\AI11_lecture\CSharp\HelloCSharp01\Solve\obj\Debug\Solve.exe
+D:\work\AI11_lecture\CSharp\HelloCSharp01\Solve\obj\Debug\Solve.pdb

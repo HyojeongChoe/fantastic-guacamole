@@ -1,0 +1,14 @@
+heap : 프로그램이 구동중일 때 할당하고 사용하는 메모리
+stack : 프로그램 시작 전에 미리 메모리 할당하는 부분
+
+window 폼은 클래스
+윈도우폼을 정의할 때 쓰는 클래스 : partial 클래스
+
+partial 클래스:
+
+Form 1 - Form1 과 Form1.designer로 정의 
+C#에서의 상속은 : 로 정의
+form1:form 폼1은 폼을 상속받은 객체
+
+콘솔창에서 true false
+속성- 출력형식 - 콘솔애플리케이션

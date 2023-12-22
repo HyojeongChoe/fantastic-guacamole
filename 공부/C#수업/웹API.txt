@@ -1,0 +1,13 @@
+웹 api
+
+1. 서버구축(웹 환경)  webhosting => github에 저장된 html파일을 
+어디에서든지 열어볼 수 있음 즉 일종의 웹 페이지(홈페이지)
+2. html파일을 로컬에서 만들어서 이 코드 집어넣어도 안 돌아감
+반드시 호스팅 된 곳이나 서버에서 적용해야 이 api가 적용됨(주의사항)
+
+rest api
+ 키
+JavaScript 키 
+
+mssql
+ssms 

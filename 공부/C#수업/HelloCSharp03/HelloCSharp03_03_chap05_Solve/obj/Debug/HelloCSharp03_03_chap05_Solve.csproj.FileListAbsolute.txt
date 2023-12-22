@@ -1,0 +1,13 @@
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_03_chap05_Solve\bin\Debug\HelloCSharp03_03_chap05_Solve.exe.config
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_03_chap05_Solve\bin\Debug\HelloCSharp03_03_chap05_Solve.exe
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_03_chap05_Solve\bin\Debug\HelloCSharp03_03_chap05_Solve.pdb
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_03_chap05_Solve\obj\Debug\HelloCSharp03_03_chap05_Solve.csproj.AssemblyReference.cache
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_03_chap05_Solve\obj\Debug\HelloCSharp03_03_chap05_Solve.Properties.Resources.resources
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_03_chap05_Solve\obj\Debug\HelloCSharp03_03_chap05_Solve.csproj.GenerateResource.cache
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_03_chap05_Solve\obj\Debug\HelloCSharp03_03_chap05_Solve.csproj.CoreCompileInputs.cache
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_03_chap05_Solve\obj\Debug\HelloCSharp03_03_chap05_Solve.exe
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_03_chap05_Solve\obj\Debug\HelloCSharp03_03_chap05_Solve.pdb
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_03_chap05_Solve\obj\Debug\HelloCSharp03_03_chap05_Solve.Form1.resources
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_03_chap05_Solve\obj\Debug\HelloCSharp03_03_chap05_Solve.Form2.resources
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_03_chap05_Solve\obj\Debug\HelloCSharp03_03_chap05_Solve.Form3.resources
+D:\work\AI11_lecture\CSharp\HelloCSharp03\HelloCSharp03_03_chap05_Solve\obj\Debug\HelloCSharp03_03_chap05_Solve.Form4.resources

@@ -1,0 +1,7 @@
+D:\work\AI11_lecture\CSharp\HelloCSharp01\HelloCSharp01_03_chap0102\bin\Debug\HelloCSharp01_03_chap0102.exe.config
+D:\work\AI11_lecture\CSharp\HelloCSharp01\HelloCSharp01_03_chap0102\bin\Debug\HelloCSharp01_03_chap0102.exe
+D:\work\AI11_lecture\CSharp\HelloCSharp01\HelloCSharp01_03_chap0102\bin\Debug\HelloCSharp01_03_chap0102.pdb
+D:\work\AI11_lecture\CSharp\HelloCSharp01\HelloCSharp01_03_chap0102\obj\Debug\HelloCSharp01_03_chap0102.csproj.AssemblyReference.cache
+D:\work\AI11_lecture\CSharp\HelloCSharp01\HelloCSharp01_03_chap0102\obj\Debug\HelloCSharp01_03_chap0102.csproj.CoreCompileInputs.cache
+D:\work\AI11_lecture\CSharp\HelloCSharp01\HelloCSharp01_03_chap0102\obj\Debug\HelloCSharp01_03_chap0102.exe
+D:\work\AI11_lecture\CSharp\HelloCSharp01\HelloCSharp01_03_chap0102\obj\Debug\HelloCSharp01_03_chap0102.pdb

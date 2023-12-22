@@ -1,0 +1,10 @@
+C:\Users\xenoi\OneDrive\바탕 화면\효정\c#\씨샵참고자료\DB연동 참고\sql쿼리문들\WindowsFormsApp1_Update_Delete\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe.config
+C:\Users\xenoi\OneDrive\바탕 화면\효정\c#\씨샵참고자료\DB연동 참고\sql쿼리문들\WindowsFormsApp1_Update_Delete\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.exe
+C:\Users\xenoi\OneDrive\바탕 화면\효정\c#\씨샵참고자료\DB연동 참고\sql쿼리문들\WindowsFormsApp1_Update_Delete\WindowsFormsApp1\bin\Debug\WindowsFormsApp1.pdb
+C:\Users\xenoi\OneDrive\바탕 화면\효정\c#\씨샵참고자료\DB연동 참고\sql쿼리문들\WindowsFormsApp1_Update_Delete\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.AssemblyReference.cache
+C:\Users\xenoi\OneDrive\바탕 화면\효정\c#\씨샵참고자료\DB연동 참고\sql쿼리문들\WindowsFormsApp1_Update_Delete\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Form1.resources
+C:\Users\xenoi\OneDrive\바탕 화면\효정\c#\씨샵참고자료\DB연동 참고\sql쿼리문들\WindowsFormsApp1_Update_Delete\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.Properties.Resources.resources
+C:\Users\xenoi\OneDrive\바탕 화면\효정\c#\씨샵참고자료\DB연동 참고\sql쿼리문들\WindowsFormsApp1_Update_Delete\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.GenerateResource.cache
+C:\Users\xenoi\OneDrive\바탕 화면\효정\c#\씨샵참고자료\DB연동 참고\sql쿼리문들\WindowsFormsApp1_Update_Delete\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.csproj.CoreCompileInputs.cache
+C:\Users\xenoi\OneDrive\바탕 화면\효정\c#\씨샵참고자료\DB연동 참고\sql쿼리문들\WindowsFormsApp1_Update_Delete\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.exe
+C:\Users\xenoi\OneDrive\바탕 화면\효정\c#\씨샵참고자료\DB연동 참고\sql쿼리문들\WindowsFormsApp1_Update_Delete\WindowsFormsApp1\obj\Debug\WindowsFormsApp1.pdb
