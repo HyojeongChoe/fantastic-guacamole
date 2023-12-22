@@ -1,0 +1,12 @@
+﻿  file.c
+  ui.c
+  main.c
+C:\Users\User\Desktop\효정\효정파일\work_c\230905_adr\230905_adr\main.c(17,8): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+C:\Users\User\Desktop\효정\효정파일\work_c\230905_adr\230905_adr\main.c(56,4): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+  menu.c
+  코드를 생성하고 있습니다.
+  19 of 21 functions (90.5%) were compiled, the rest were copied from previous compilation.
+    0 functions were new in current compilation
+    0 functions had inline decision re-evaluated but remain unchanged
+  코드를 생성했습니다.
+  230905_adr.vcxproj -> C:\Users\User\Desktop\효정\효정파일\work_c\230905_adr\x64\Release\230905_addr_s.exe

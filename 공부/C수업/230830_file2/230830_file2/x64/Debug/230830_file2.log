@@ -1,0 +1,8 @@
+﻿  exam3.c
+D:\work_c\230830_file2\230830_file2\exam3.c(41,8): warning C4244: '함수': 'time_t'에서 'unsigned int'(으)로 변환하면서 데이터가 손실될 수 있습니다.
+D:\work_c\230830_file2\230830_file2\exam3.c(88,12): warning C4098: 'write': 'void' 함수에서 값을 반환하고 있습니다.
+D:\work_c\230830_file2\230830_file2\exam3.c(97,3): warning C4013: 'gets'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+D:\work_c\230830_file2\230830_file2\exam3.c(114,12): warning C4098: 'ran_write': 'void' 함수에서 값을 반환하고 있습니다.
+D:\work_c\230830_file2\230830_file2\exam3.c(118,4): warning C4013: 'strcpy'이(가) 정의되지 않았습니다. extern은 int형을 반환하는 것으로 간주합니다.
+D:\work_c\230830_file2\230830_file2\exam3.c(135,12): warning C4098: 'read': 'void' 함수에서 값을 반환하고 있습니다.
+  230830_file2.vcxproj -> D:\work_c\230830_file2\x64\Debug\230830_file2.exe

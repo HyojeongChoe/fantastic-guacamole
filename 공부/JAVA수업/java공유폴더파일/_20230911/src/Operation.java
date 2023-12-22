@@ -1,0 +1,13 @@
+public class Operation {
+    public static void main(String[] args) {
+        BankAccount ba1 = new BankAccount(10000, "a");
+
+        BankAccount ba2 = new BankAccount(5000, "b");
+
+        ba1.deposit(10000);
+
+        ba2.withdraw(10000);
+
+        ba1.withdraw(10001);
+    }
+}
