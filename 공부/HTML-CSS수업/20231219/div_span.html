@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--공간분할태그-->
+    <!-- display 속성: block, inline, inline-block-->
+    <!-- block: 한줄 전체 차지, 상하로는 필요한 공간만 차지하며 조절은 가능함
+         inline: 상하좌우 모두 필요한 만큼만 공간 차지 조절 x
+         inline-block: 상하좌우 필요한 만큼만 공간 차지, 좌우 크기 조정이 됨 -->
+    <p style ="display:block; height: 10px;">block으로 설정</p>   <br>
+        <!-- width, height 값을 주었으나 조절이 안되고 있음-->
+    <p style ="display:inline;width: 20px;height: 20px;" >inline으로 설정</p> <br>
+        <!-- width, height값을 주지 않으면 inline 처럼 작동, 다만 조절이 가능함-->
+    <p style ="display:inline-block; width: 200px;height: 20px;">inline-block으로 설정</p> <br>
+    <!-- div 태그 :display값 디폴트가 block 속성의 공간 분할 태그
+        span 태그 :display값 디폴트가 inline 속성의 공간 분할 태그-->
+    <div>
+        div태그
+    </div>
+
+    <span style="width: 200; height: 200;">
+        span태그
+    </span>
+
+</body>
+</html>

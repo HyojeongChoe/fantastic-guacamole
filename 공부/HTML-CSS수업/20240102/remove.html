@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+    <style>
+        #parent{
+            background-color: magenta;
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>remove()메소드</h3>
+    <div id="parent">
+        <div id="first">첫번째 내용</div>
+        <div id="second">두번째 내용</div>
+        <div id="third">세번째 내용</div>
+    </div>
+    <!-- <div id="first">첫번째 내용</div>
+    <div id="second">두번째 내용</div>
+    <div id="third">세번째 내용</div> -->
+
+    <button id="remove">요소 삭제</button>
+    <button id="empty">Empty 비우기</button>
+    <button id="rewind">복구</button>
+
+    <script>
+        //요소삭제 : remove(), empty()
+
+        //1. remove() :: 지정된 요소와 하위 요소를 모두 제거( 제거되는 요소들의 데이터와 이벤트 전부 제거)
+        // $(function () {
+        //     $('#remove').click(function () {
+        //         $('div').remove('#first');  //선택자를 통해서 조건을 줄수도 있지만, remove 메소드를 통해서 추가적인 조건도 줄 수 있음
+        //     })
+        // })
+
+        //2. detach() :: 지정한 요소와 하위 요소를 모두 제거( 제거되는 요소들의 데이터와 이벤트가 제거되지않고 유지/ 제거 후 append로 재생성 하는 경우에 사용)
+        let data;
+        $(function(){
+            $('#remove').click(function(){
+                data = $("#first, #second").detach();
+            })
+        })
+        $(function(){
+            $('#rewind').click(function(){
+                $('#parent').append(data);
+            })
+        })
+
+        //3. empty() :: 지정된 요소의 하위 요소를 모두 제거 (지정한 요소는 제거되지 않는다. 데이터와 이벤트가 전부 제거)
+        $(function(){
+            $('#empty').click(function(){
+                $('#parent').empty();
+            })
+        })
+
+
+    </script>
+</body>
+
+</html>

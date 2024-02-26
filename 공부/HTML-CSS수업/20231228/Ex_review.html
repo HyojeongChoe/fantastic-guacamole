@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- 사용자에게 4개의 입력을 받게끔 하고, 사용자의 mbti를 아래로 출력하게끔 하라. -->
+    <form>
+        <input type="radio" id="E" name="EI" value="E">
+        <label for id="E">외향적(E)</label>
+        <input type="radio" id="I" name="EI" value="I">
+        <label for id="I">내향적(I)</label><br><br>
+        <input type="radio" id="S" name="SN" value="S">
+        <label for id="S">현실형(S)</label>
+        <input type="radio" id="N" name="SN" value="N">
+        <label for id="N">직관형(N)</label><br><br>
+        <input type="radio" id="F" name="FT" value="F">
+        <label for id="F">감성적(F)</label>
+        <input type="radio" id="T" name="FT" value="T">
+        <label for id="T">이성적(T)</label><br><br>
+        <input type="radio" id="J" name="JP" value="J">
+        <label for id="J">계획형(J)</label>
+        <input type="radio" id="P" name="JP" value="P">
+        <label for id="P">즉흥형(P)</label><br><br>
+        <input type="submit" value="제출" onclick="getMbti()">
+
+    </form>
+    <script>
+        function getMbti() {
+            let EI = document.querySelector('input[name="EI"]:checked');
+            let SN = document.querySelector('input[name="SN"]:checked');
+            let FT = document.querySelector('input[name="FT"]:checked');
+            let JP = document.querySelector('input[name="JP"]:checked');
+            let mbti = '';
+            
+            if (EI && SN && FT && JP) {
+                mbti = EI.value + SN.value + FT.value + JP.value;
+                document.write('당신의 MBTI는 ' + mbti + '입니다.');
+            } else {
+                alert('모든 항목을 선택해주세요.');
+            }
+        }
+    </script>
+</body>
+
+</html>

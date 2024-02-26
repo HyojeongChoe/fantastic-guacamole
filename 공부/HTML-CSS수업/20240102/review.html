@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button id="btn">누르셈</button>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt rem quo dolorum velit praesentium laboriosam ad sapiente, harum error. Earum recusandae nemo laboriosam architecto modi aperiam, hic consequuntur veniam harum.
+
+    </p>
+    <script>
+        $(document).ready(function(){
+            $('#btn').click(function(){
+                $('p').slideUp(1500).slideDown(1500,function(){alert("버튼을 클리갰습니다.")})
+            })
+        })
+    </script>
+</body>
+</html>

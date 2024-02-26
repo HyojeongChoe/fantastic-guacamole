@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>아래는 로컬 파일을 불러온 결과입니다.</h3>
+    <button id="btn">본문 불러오기</button>
+    <p id="test"></p>
+
+    <script>
+        // Jq Ajax 문법도, js ajax 문법보다 간결하고 작성하기 쉬움 
+        // 요청 전송하는 방식 :: GET, POST
+        $(function () {
+            $('#btn').click(function () {
+                //html 파일 상. 응답받은 파일 표현
+                // $('#test').load('xhttp.txt')
+
+                //get 형식으로 데이터 요청하고, 후처리까지 진행
+                $.get("xhttp.txt",function(){
+                    $('#test').load('xhttp.txt')    //html 파일에 txt 파일 표사
+                    alert("xhttp.txt 파일이 불러와짐")  //경고창 띄우기
+                })
+            })
+        })
+        //load(), get(), post()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>본문임</p>
+    <p>본문일것임ㅁㅁ</p>
+    <input type="button" id="hide" value="hide">
+    <input type="button" id="show" value="show"><br>
+    <input type="button" id="hs" value="Hide/Show">
+    
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                alert('본문 사라짐 ㅠ');
+                $('p').hide('nomal');
+                // setTimeout(function(){alert('본문 사라짐 ㅠ')},500);
+                
+            }) 
+            $('#show').click(function(){
+                alert('본문 생김 ㅠ');
+                $('p').show('nomal');
+            }) 
+        })
+        //하나의 버튼으로
+        $(document).ready(function(){
+            $('#hs').click(function(){
+                $('p').toggle(1000);
+            })
+        })
+
+    </script>
+</body>
+</html>

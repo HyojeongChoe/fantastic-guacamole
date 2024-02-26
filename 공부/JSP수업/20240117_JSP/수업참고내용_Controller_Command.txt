@@ -1,0 +1,29 @@
+com.javalex.ex.Controller	1
+(프론트컨트롤러)
+
+doAction으로 넘어와서 진행	6
+
+com.javalex.ex.Command	2
+-> 인터페이스 생성		
+- DTO패키지 import
+- java.util.* import 
+
+-> 클래스 생성(인터페이스에 대한 구체화 진행)	5
+
+
+com.javalex.ex.DTO		3
+자바빈(클래스, DTO) 생성
+db와 연관
+
+com.javalex.ex.DAO		4
+-DB연결
+
+입력을 받으면 Comandcontroller로 들어와서 doAction메서드 실행
+
+
+-회원삭제
+-로그인테스트
+
+지금까지 작성한 내용들을 기반으로, 코드의 흐름을 이해하고 위 2개 기능 구현하기
+커맨드 패턴 하나씩
+dao 생성

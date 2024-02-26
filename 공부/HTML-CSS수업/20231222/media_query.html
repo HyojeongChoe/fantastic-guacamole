@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+    </style>
+</head>
+<body>
+    <p>브라우저 창을 늘렸다 줄였다 해보세용</p>
+    <hr>
+
+    <!-- picture 태그 : srcset, media 속성-->
+    <!-- src속성: 불러오는 속성/ srcset 속성 :: src의미 _ "set"-->
+    <!-- picture 태그와 source 태그를 함께 사용하여
+        보여주는 위치는 공유하되, 불러오는 이미지는 '조건'에 따라 다르게 설정-->    
+    <picture>
+        <!-- 700px 이하일 때, 아래 사진을 보여주어라.-->
+        <source srcset="https://d2k6w3n3qf94c4.cloudfront.net/media/test_detail/thumb/%EB%88%88%EC%82%AC%EB%9E%8C%ED%85%8C%EC%8A%A4%ED%8A%B8.png"
+            alt="이미지를 불러오지 못하였습니다." media="(max-height:700px)">
+        <source srcset="https://cdn.newshyu.com/news/photo/202301/1008385_217305_617.jpg"
+            alt="이미지를 불러오지 못하였습니다." >
+        <!-- 맨끝에 source 태그들 중 하나는 미디어 설정을 해주면 안됨(권장)-->
+        <img>
+    </picture>
+</body>
+</html>

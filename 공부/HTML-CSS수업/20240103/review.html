@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+
+<body>
+    <!-- DOM: document의 준말. html 통해 만들어진 페이지-->
+    <div>여기를 누르면 값이 변경됩니다.</div>
+    <p>수요일 아침...<span>오늘도화이팅</span></p>
+    <br>
+    <input type="text" /> <button id="btn">입력값 확인</button>
+    <br><br>
+    <button id="add">요소추가</button> <button id="del">요소삭제</button>
+    <ol>    <!--목록태그-->
+
+    </ol>
+
+    <script>
+        //get,set :: text(), html(), val(), attr()
+
+        //set
+        $(function () {
+            $('div').dblclick(function () {
+                $('div').text("변경이 완료되었습니다.");
+            })
+        })
+
+        //get text()
+        $(function () {
+            $('p').click(function () {
+                alert($('p').text());   //요소에 있는 텍스트만 반환
+            })
+            $('span').click(function () {
+                alert($('p').html());   //요소에 있는 html 코드 반환 (get) 
+                $('p').html('<span>수요일 아침...<span>오늘도화이팅</span></span>')   //p 태그의 html 코드 수정(set)
+            })
+        })
+        $(function () {
+            $('#btn').click(function () {
+                alert($('input').val());    //실제 사용자가 입력한 값 반환
+                $('input').val('비가 옴..')     //set
+                $('input').attr('style', 'background-color:yellow');    //set
+            })
+            $('input').focus(function () {
+                alert("입력타입: " + $('input').attr('type'));  //get
+            })
+        })
+        //요소 조작:: 추가/ 삭제/ 복제/ 대체
+        $(function(){
+            $('#add').click(function(){
+                $('ol').append(`<li>요소가 추가되었습니다.</li>`)   //안쪽에 작성
+                $('ol').after(`<li>afet로 요소가 추가되었습니다.</li>`) //태그 이후로 추가됨
+            })
+            $('#del').click(function(){
+                //$('ol').remove()    //자기 자신을 통째로 없앰
+                $('ol').empty() //요소는 제거 x , 이벤트와 데-이터는 삭제
+            })
+        })
+    </script>
+</body>
+
+</html>

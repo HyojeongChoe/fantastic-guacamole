@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="title">제목입니다. 클릭해보셈</p>
+    <button id="stop">멈춰</button>
+    <p id="para">아래는 본문입니다.<br>
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores sit ipsa impedit repellendus, molestias enim autem, voluptate tempore minima id assumenda quaerat nihil, veniam neque repellat dolore iste optio quisquam!</p>
+    
+    <script>
+        $(document).ready(function(){
+            $('#title').css('background-color','lightgreen');
+            $('#title').css('color','green');
+            $('#para').css('background-color','lightyellow')
+            $('#para').css('color','green');
+            $('#para').css('display','none')    
+        })
+        // //fadeout: 자연스럽게 사라지는 모션
+        // $(document).ready(function(){
+        //     $('#title').click(function(){
+        //         $('#para').fadeOut();
+        //     })
+        // })
+        //
+        // //fadein: 자연스럽게 나타나는모션
+        // $(document).ready(function(){
+        //     $('#title').click(function(){
+        //         $('#para').fadeIn();
+        //     })
+        // })
+        //fadetoggle: 자연스럽게 숨기고나타나게 하는 모션
+        $(document).ready(function(){
+            $('#title').click(function(){
+                $('#para').fadeToggle(5000);
+            })
+        })
+
+        $(document).ready(function(){
+            $('#stop').click(function(){
+                $('#para').stop();
+            })
+        })
+    </script>
+</body>
+</html>

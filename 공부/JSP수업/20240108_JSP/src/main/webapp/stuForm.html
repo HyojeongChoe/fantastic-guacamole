@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form method="post" action="stuBin">
+		이름:
+		<input type="text" id="name" name="name"/> <br>
+		나이:
+		<input type="text" id="age" name="age"/> <br>
+		번호:
+		<input type="text" id="number" name="number"/> <br>
+		성별:
+		<!-- id는 label에 연결하기 위해 사용.. 써도되고 안써도 되고 ~ -->
+		<input type="radio" id="mail" name="gender" value="남"/>	
+		<label for="mail">남</label>
+		<input type="radio" id="femail" name="gender" value="여"/> 
+		<label for="femail">여</label> <br>
+		
+		<input type="submit" value="제출">
+		<br>
+	</form>
+</body>
+</html>

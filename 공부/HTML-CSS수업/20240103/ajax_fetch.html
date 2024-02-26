@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h3>아래는 웹에 있는 json 파일에서 불러온 값입니다.</h3>
+    <p id="test"></p>
+
+    <script>
+        //fetch API를 사용하여, ajax 통신 시도
+        // 1. fetch 메소드 사용해서, 파일 요청
+        // let index = ['Name', 'age', 'blood', 'city', 'Company', 'Height', 'Month', 'Day', 'Work', 'Hungry'];
+
+        fetch("https://starfall-yuna.github.io/super-duper-computing-machine/json.json")
+            .then(response => {     //보낸 요청에 대해 응답이 잘 되었는지 확인하였는지 확인
+                if (!response.ok) {   //앞에 느낌표 붙일 경우 에러 생긴 것(<-> 잘 된것..)
+                    throw new Error('400 or 500 Error')
+                }
+                return response.json();     //JSON.parse와 유사
+            })
+            .then(data => {     //응답받은 데이터 처리
+                let para = document.getElementById('test');
+                // for(let i = 0 ; i < index.length; i ++){
+                //     para.innerHTML += `${index[i]}: ${data[index[i]]}<br>`
+                // }
+                para.textContent = data["Name"] + " " + data['age'];      //JSON.parse(this.responseText)
+            })
+            .catch(error => {
+                console.log("Errer!!!");
+            })
+    </script>
+</body>
+
+</html>

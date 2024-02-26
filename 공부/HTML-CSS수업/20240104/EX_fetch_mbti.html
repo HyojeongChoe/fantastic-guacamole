@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MBTI 테스트</title>
+</head>
+
+<body>
+    <input type="radio" id="E" name="EI" value="E">
+    <label for="E">외향적(E)</label>
+    <input type="radio" id="I" name="EI" value="I">
+    <label for="I">내향적(I)</label>
+    <br><br>
+    <input type="radio" id="S" name="SN" value="S">
+    <label for="S">현실형(S)</label>
+    <input type="radio" id="N" name="SN" value="N">
+    <label for="N">직관형(N)</label>
+    <br><br>
+    <input type="radio" id="F" name="FT" value="F">
+    <label for="F">감성적(F)</label>
+    <input type="radio" id="T" name="FT" value="T">
+    <label for="T">이성적(T)</label>
+    <br><br>
+    <input type="radio" id="J" name="JP" value="J">
+    <label for="J">계획형(J)</label>
+    <input type="radio" id="P" name="JP" value="P">
+    <label for="P">즉흥형(P)</label>
+    <br><br>
+    <input type="button" value="제출" onclick="getMbti()">
+
+    <h3 id="mbti"></h3> <!-- 결과값을 innerHTML로 출력할 예정 -->
+
+    <script>
+        function getMbti() {
+            // 함수: 특정 기능을 수행하기 위한 명령문들의 집합
+            let EI = document.querySelector('input[name="EI"]:checked').value;
+            let SN = document.querySelector('input[name="SN"]:checked').value;
+            let FT = document.querySelector('input[name="FT"]:checked').value;
+            let JP = document.querySelector('input[name="JP"]:checked').value;
+            let mbti = EI + SN + FT + JP; // 결과값 저장할 변수 생성
+
+            let result = document.querySelector("#mbti");
+
+            fetch("https://hyojeongchoe.github.io/web_test/mbti.json")
+                .then(response => {
+                    //요청을 보냈을 때 응답이 잘 도착했는가
+                    if (!response.ok) {   //응답이 제대로 도착하지 않았을 때
+                        throw new Error('400 or 500 Error')
+                    }
+                    else {   //응답이 잘 도착했을 때
+                        return response.json(); //메소드 사용해서 미리 파싱해서 보냄
+                    }
+                })
+                .then(data => {  //response를 데이터로 전송
+                    result.innerHTML = `${mbti}: ${data[mbti]}`;
+                })
+                .catch(error => {
+                    console.log("Error 발생!")
+                });
+        }
+    </script>
+
+</body>
+
+</html>

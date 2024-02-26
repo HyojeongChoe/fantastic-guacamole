@@ -1,0 +1,54 @@
+/* 전체 선택자(*): html 페이지 안에 있는 모든 태그들을 선택
+*{
+    border: 2px solid black;
+}
+
+태그 선택자: html에 포함되어있는 특정 태그들을 선택
+*/
+h1, h3{
+    background-color: red;
+    font-style: italic;
+}
+
+/*
+아이디 선택자 : 특정 아이디 값을 갖고 있는 태그 선택
+ "#" 기호를 사용해서 선택
+*/
+#first_h1{
+    font-size: 500%;
+    background-color: blue;
+}
+
+/*
+클래스 선택자 : 각 태그들의 class값들 중 특정 값이 있는 태그 선택
+"." 기호를 사용해서 선택
+class값 중 지정된 값이 포함되어 있기만 하면 적용
+*/
+.first{
+    border: 2px solid black;
+}
+
+/* h1 태그 중 클래스가 first가 포함되어있는 태그 선택
+*/
+h1.first{
+    text-align: center;
+}
+h2.first{
+    margin: 100px 200px 100px 200px;
+    padding: 30px;
+    text-align: center;
+}
+/* label 태그들 중 for속성에 대해 적용*/
+label[for]{
+    font-size: xx-large;
+    color: blue;
+}
+/* label 태그 중 for="femail" 속성에 대해 적용*/
+label[for="femail"]{
+    color: pink;
+}
+
+/* css 파일 작성할 시에는 
+포괄적인 스타일 설정은 파일 윗부분에 작성
+구체적인 스타일 설정은 파일 아래 부분에 작성
+*/

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #google{
+            color: blue;
+            font-weight: bolder;
+        }
+        #naver{
+            color: green;
+            font-weight: bolder;
+        }
+    </style>
+</head>
+<body>
+    <!-- form 태그 : 입력 양식 선언, 입력 값 전송(submmit 타입 input 필수 필요)
+         form 태그를 통해서 다른 html 파일을 불러올 수도 있음 -->
+
+    <!-- form태그 속성: method, action(다른 html 또는 url 불러옴)-->     
+    <form action="login.html">
+        <label for="id">아이디 입력</label>
+        <input type="text" id="id"><br>
+        <label for="pw">비밀번호 입력</label>
+        <input type="password" id="pw"><br>
+        <input type="submit" value="로그인"><br>
+    </form>
+    <br>
+    <h1 id="google">구글 검색</h1>
+    <form action="https://www.google.com/search">
+        <input type="text" name="q">  <input type="submit" value="전송"><br>
+    </form>
+    <h1 id="naver">네이버검색</h1>
+    <form action="https://search.naver.com/search.naver">
+        <input type="text" name="query">  <input type="submit" value="전송"><br>
+    </form>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // 배열 선언 및 초기화 방법
+        // 1. let/const 배열명=[값1, 값2, 값3];
+        let introduce=["최효정", 28, false, 'A'];
+        // 2. let/const 배열명=Array(값1, 값2, 값3..);
+        let introduce2=Array('최효정', 28, false, 'A');
+        // 3. let/const 배열명 = new Arrat(값1, 값2..);
+        let introduce3 = new Array("최효정", 28, false, 'A');
+
+        console.log(introduce)
+        console.log(introduce2)
+        console.log(introduce3)
+
+        //배열에서 값을 삭제 => delete
+        delete introduce[0];
+        console.log(introduce[0])
+        console.log(introduce)
+    </script>
+</body>
+</html>

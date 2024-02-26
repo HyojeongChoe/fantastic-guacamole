@@ -1,0 +1,19 @@
+<jsp>
+
+톰캣 10.1 설치
+eclipse 두번째꺼 설치
+
+파일 new - dynamic 웹프로젝트
+
+project name : start_jsp
+
+target runtime : New runtime -> apach톰캣 10.1 -> create new local server  체크
+	-> 톰캣디렉토리 -> 아파치톰캣 폴더선택 -> 적용
+
+charset = "UTF-8" 변경해야 한글 깨짐 x
+
+콘솔 server - 더블클릭 
+-Server option 
+-Publish module ~~~ 체크
+-Port : HPPT/1.1  8181
+

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //입력(숫자 2, 연산자 1)
+
+        while (true) {
+            let num1 = prompt("첫번째 숫자 입력");
+            let n1 = Number(num1);
+            let num2 = prompt("두번째 숫자 입력");
+            let n2 = Number(num2);
+            let op = prompt("연산자 입력");
+            if (n1 === 0 && n2 === 0) {
+                break;
+            }
+            else{
+                alert(culc(n1, n2, op));
+                console.log(culc(n1, n2, op));
+            }
+        }
+
+        //함수
+        function culc(n1, n2, op) {
+            if (op === '+') {
+                return n1 + n2;
+            }
+            else if (op === '-') {
+                return n1 - n2;
+            }
+            else if (op === '*') {
+                return n1 * n2;
+            }
+            else if (op === '/') {
+                return n1 / n2;
+            }
+            else if (op === '%') {
+                return n1 % n2;
+            }
+        }
+
+        //함수
+        // function culc(op){
+        //     if(op ==='+'){
+        //         return n1+n2;
+        //     }
+        //     else if(op==='-'){
+        //         return n1-n2;
+        //     }
+        //     else if(op==='*'){
+        //         return n1*n2;
+        //     }
+        //     else if(op==='/'){
+        //         return n1/n2;
+        //     }
+        //     else if(op==='%'){
+        //         return n1%n2;
+        //     }
+        // }
+    </script>
+</body>
+
+</html>

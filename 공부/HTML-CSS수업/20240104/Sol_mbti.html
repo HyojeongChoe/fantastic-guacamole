@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="radio" id="E" name="EI" value="E">
+    <label for="E">외향적(E)</label>
+    <input type="radio" id="I" name="EI" value="I">
+    <label for="I">내향적(I)</label>
+    <br><br>
+    <input type="radio" id="S" name="SN" value="S">
+    <label for="S">현실형(S)</label>
+    <input type="radio" id="N" name="SN" value="N">
+    <label for="N">직관형(N)</label>
+    <br><br>
+    <input type="radio" id="F" name="FT" value="F">
+    <label for="F">감성적(F)</label>
+    <input type="radio" id="T" name="FT" value="T">
+    <label for="T">이성적(T)</label>
+    <br><br>
+    <input type="radio" id="J" name="JP" value="J">
+    <label for="J">계획형(J)</label>
+    <input type="radio" id="P" name="JP" value="P">
+    <label for="P">즉흥형(P)</label>
+    <br><br>
+    <button id="submit">제출</button>
+    <br>
+    <p id="result"></p>
+
+    <script>
+        let mbti="";    //결과값 저장할 변수
+
+        $(function(){
+            $('#submit').one("click", function(){   //버튼을 한번 눌렀을때만 이벤트 처리
+                mbti += document.getElementById("E").checked ? "E" : "I" ;
+                mbti += document.getElementById("S").checked ? "S" : "N" ;
+                mbti += document.getElementById("F").checked ? "F" : "T" ;
+                mbti += document.getElementById("J").checked ? "J" : "P" ;
+                console.log(mbti)
+
+                $.ajax({
+                    url : "https://hyojeongchoe.github.io/web_test/mbti.json",
+                    method: "GET",
+                    dataType : "json",
+                    //여기까지 작성하면, 위 양식대로 파일 요청
+
+                    //여기서부터는 응답받을 파일을 적절히 사용
+                    success: function(data){
+                        //현재까지 저장된 mbti 값을 인덱스로 사용해서 값 불러오기 
+                        mbti +=": " +  data[mbti];
+                        document.querySelector("#result").textContent=mbti;
+                        // let para = $('#result')
+                        // para.text(mbti +=": " +  data[mbti])
+                    },
+                    error: function(a,b,c){
+                        console.log("Error 발생")
+                    }
+                })
+            })
+        })
+        
+    </script>
+</body>
+
+</html>

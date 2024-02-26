@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let student = {
+            score: [],
+            good: 0,     //0으로 초기화 => 자동으로 타입이 number
+            avg: 0,
+
+            //1. subject_score(sc): 성적을 매개변수로 받음
+            subject_score: function (sc) {
+                //해당 과목 성적이 40점 이상이면 good에 1추가
+                if (sc >= 40) {
+                    this.good++;
+                }
+            },
+            //2.sum_score()
+            sum_score: function () {
+                //총 평균의 합이 60점 이상이면 good에 1추가
+                for (let i = 0; i < 5; i++) {
+                    this.avg += this.score[i];     //총 합계 우선 구해줌
+                }
+                this.avg /= 5;     //평균 구해짐
+                if (this.avg >= 60) {
+                    this.good++;
+                }
+            },
+            print: function () {
+                //모든 과목의 점수 출력
+                for (let i = 0; i < 5; i++) {
+                    document.write(`${i + 1}과목: ${this.score[i]}점` + '<br>');
+                }
+
+                //총 평균의 점수 출력
+                document.write(`평균: ${this.avg}점` + '<br>');
+
+                //합불여부
+                if (this.good === 6) {
+                    document.write("합격");
+                }
+                else {
+                    document.write("불합격");
+                }
+            }
+        }
+
+        for (let i = 0; i < 5; i++) {
+            student.score[i] = Number(prompt(`${i + 1}번째 과목의 점수를 입력하세요.`));
+            student.subject_score(student.score[i]);
+        }
+        student.sum_score();
+        student.print();
+    </script>
+</body>
+
+</html>

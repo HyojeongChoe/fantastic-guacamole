@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p id="pTag">Jquery Text</p>
+    <p >Clickkkme</p>
+    <p >clickmeeeee~~~~</p>
+    <h3 style="display: inline-block;">여기에 마우스 대보기</h3>
+    <label>test용</label>
+    <input type="text">
+    <script>
+        //이벤트 : 동작에 대한 서술
+        $(document).ready(function(){   //html문서를 완전히 불러오고
+            $('p').click(function(){    //클릭하면
+                $(this).css('color','red');
+                $(this).text("double click plz");   //요소 값 변경
+            })
+        })
+
+        //더블클릭하면
+        $(document).ready(function(){
+            $('p').dblclick(function(){ 
+                $(this).hide();     //사라짐
+                alert("p 태그가 사라지뮤ㅠㅠ")  //자바스크립트 문법 섞어서 사용 가능
+            })  
+        })
+
+        // //커서를 요소에 갖다대면
+        // $(document).ready(function(){
+        //     $('h3').mouseenter(function(){  
+        //         document.write('h3에 마우스가 들어옴~~~~')
+        //     })
+        // })
+        
+        //hover(): 커서의 위치에 따른 행동 정의(마우스를 갖다댔을 때, 마우스를 뺐을 떄,)
+        $(document).ready(function(){
+            $('h3').hover(function(){
+                console.log("h3에 커서를 올림");
+            },
+            function(){
+                console.log("h3에 커서를 내림");
+            }
+            )
+        })
+        //focus() : 
+        $(document).ready(function(){
+            $("[type=text]").focus(function(){  //포커싱이 되었을 때
+                $(this).css('background-color','lightyellow');
+            })
+            $('[type=text]').blur(function(){   //포커스를 잃었을 때
+                $(this).css('background-color','lightgreen');
+            })
+        })
+        
+    </script>
+</body>
+</html>

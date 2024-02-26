@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="jquery-3.7.1.min.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <button id="hide">hide</button>
+    <button id="show">show</button>
+    <button id="fadeout">fadeout</button>
+    <button id="fadein">fadein</button>
+    <button id="toggle">토글</button>
+    <button id="stop">STOP</button>
+
+    <br>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit optio quas esse reprehenderit non atque eligendi consectetur quidem itaque, debitis nemo asperiores modi inventore! Laborum alias quod quos explicabo excepturi.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. In hic et, numquam deserunt aut corrupti voluptatibus esse incidunt amet magnam vero quisquam ipsa! Debitis in a voluptatum quos, nesciunt ab?
+    </p>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Amet molestiae nemo nulla labore, expedita temporibus rem mollitia ipsum quisquam ratione vitae, animi sit atque, explicabo consequatur necessitatibus exercitationem sed et.</p>
+    
+    <script>
+        $(document).ready(function(){
+            $('#hide').click(function(){
+                alert('본문이 사라졌')
+                $('p').hide(3000);
+            })
+        })
+
+        $(document).ready(function(){
+            $('#show').click(function(){
+                alert('본문이 나타났')
+                $('p').show(3000);
+            })
+        })
+
+        //하나의 버튼으로 hide 및 show 모두 할 수 있도록 하기
+        $(document).ready(function(){
+            $('#toggle').click(function(){
+                $('p').toggle(1000);
+            })
+        })
+
+        //fadein.out
+        $(document).ready(function(){
+            $('#fadeout').click(function(){
+                $('p').fadeOut('slow');
+            })
+        })
+        $(document).ready(function(){
+            $('#fadein').click(function(){
+                $('p').fadeIn('slow');
+            })
+        })
+
+        //멈추기
+        $(document).ready(function(){
+            $('#stop').click(function(){
+                // $('p').stop(alert('멈춤'));
+                $('p').stop();
+            })
+        })
+    </script>
+</body>
+</html>

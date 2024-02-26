@@ -1,0 +1,22 @@
+프러젝트 생성할때 web.xml 체크
+
+
+
+<한글깨짐 방지>
+윈도우- preferences - general - content types- text -text editor default encoding- UTF-8
+
+workspace - other - UTF-8
+
+html files, css files , jsp, xml - UTF-8
+
+Editors - spelling - UTF-8
+
+----------------------
+이름/ 나이/ 전공/ 취미/ 애용하는 사이트
+위 정보들을 사용자에게 html파일로 입력받고
+
+다른페이지로 이동하여 사용자가 입력한 값들을 보여주는 서블릿 파일 작성
+----------------------------------
+
+
+

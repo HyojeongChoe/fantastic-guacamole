@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 표를 만들 때에는 <table> 태그 사용 -->
+    <table border="1px solid black" >
+
+        <caption style="font-size: 30px">인적사항</caption>
+        <colgroup>
+            <col style="background-color: lightblue">
+            <col span="3" style="background-color: lightgreen">
+        </colgroup>
+        <!-- <tr>, <th>, <td>를 사용하여, 행과 열을 구성-->
+
+        <!-- colspan 속성: 하나의 셀의 너비 지정-->
+        <!-- rowspan 속성: 하나의 셀의 높이 지정-->
+        <tr>
+            <th rowspan="4">자매</th>
+            <th colspan="3 ">인적사항</th>
+        </tr>
+        <tr style="background-color: bisque">
+            <th>이름</th>
+            <th>성별</th>
+            <th>생일</th>
+        </tr>
+        <tr>
+            <td>최효정</td>
+            <td>여성</td>
+            <td>09/22</td>
+        </tr>
+        <tr>
+            <td>최현희</td>
+            <td>여성</td>
+            <td>01/10</td>
+        </tr>
+        <!-- <thead>, <tbody>, <tfoot> :: 헤더, 본문 바닥글 의미-->
+    </table>
+</body>
+</html>

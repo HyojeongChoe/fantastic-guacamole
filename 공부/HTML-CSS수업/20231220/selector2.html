@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* 후손 선택자: 특정 태그 안에 있는 후손을 선택
+        [선택자1] [선택자2] {선언문들}    (공백을 이용해서 후손을 선택*/
+        div h3{
+            color: blue;
+        }
+        #header h3, #header>p{
+            border: 3px solid red;
+        }
+        /* 자손 선택자: 특정 태그 "바로 안에 있는" 자손을 선택
+        [선택자1]>[선택자2] {선언문들}    (> 기호 사용)
+        */
+        table>tr{       /*table 태그의 직속 후손은 tbody(생략) 이기때문에 적용 x */
+            border: 1px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <h3>헤더 안의 h3</h3>   <!-- #header div의 후손-->
+        <p>헤더안의 p 자손선택자</p>
+        <div>
+            <p>헤더안의 후손선택자p</p>
+        </div>
+    </div>
+    <div id="para">
+        <h3>본문 안의 h3</h3>   <!-- #para div의 후손 -->
+        <p>본문안의 p</p>
+    </div>
+
+    <table>
+       <tbody>      <!-- tbody태그는 생략 가능.-->
+        <tr>
+            <th>이름</th>
+            <th>성별</th>
+        </tr>
+        <tr>
+            <td>최효정</td>
+            <td>여성</td>
+        </tr>
+       </tbody>
+    </table>
+</body>
+</html>

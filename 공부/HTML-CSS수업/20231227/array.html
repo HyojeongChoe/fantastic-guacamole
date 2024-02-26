@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //배열 : 여러 개의 값을 하나의 이름으로 저장하는 공간
+        //       js 같은 경우엔, 자료형의 제약이 없고 공간의 제약 없음
+        //      배열 이름이랑 "이게 배열이다" 라는 것만 명시하면 사용에 지장없음
+        //[변수] [변수]=[] :: introduce라는 변수는 배열이다.
+        let introduce=[];
+
+        //임의의 위치 지정해서 값을 넣을 수 있음
+        introduce[1]="apple"
+        console.log(introduce[1])
+        for(let i=0;i<5;i++){
+            introduce[i]=100;
+        }
+        
+        //push()를 통해서 순차적으로 삽입
+        introduce.push("최효정")
+        introduce.push("28")
+        introduce.push(false);
+        console.log(introduce)
+
+        //이름, 나이, 성별(Boolean 타입) 입력받고 이들을 하나의 배열에 저장한다.
+        //배열에 저장된 값들을 순차적으로 html에 출력
+        let chj=[];
+       
+        let name=prompt("이름을 입력하세요. ex)홍길동")
+        let age=prompt("나이를 입력하세요.")
+        let gender=confirm("남성이면 확인, 여성이면 취소를 눌러주세요")
+        if(gender==true){
+            gender="남성"
+        }
+        else{
+            gender="여성"
+        }
+        
+        chj.push(name, Number(age), gender)
+
+        // for(let i=0;i<3;i++){
+        //     document.write(chj[i]+'<br>')
+        //     console.log(chj[i])
+        // }
+
+        document.write(`이름: ${chj[0]}<br>`);
+        document.write(`나이: ${chj[1]}<br>`);
+        document.write(`성별: ${chj[2]}<br>`);
+        
+        console.log(chj[0], typeof(chj[0]));
+        console.log(chj[1], typeof(chj[1]));
+        console.log(chj[2], typeof(chj[2]));
+
+        console.log(chj)
+    </script>
+</body>
+</html>

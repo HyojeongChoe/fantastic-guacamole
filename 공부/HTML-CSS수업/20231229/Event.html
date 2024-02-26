@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 이벤트 적용에 사용되는 html 속성: click, dblclick, mouseenter 앞에 on을 넣어주면 됨-->
+    <button ondblclick="alert('더블클릭하셨습니다.')">두번누르셈</button>
+    <button onclick="clicker()">눌러보세요</button>
+    <p id="text"></p>
+    <br>
+    <button id="para_button">본문 등장</button>
+    <p id="para" style="display: none">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus repellendus saepe dignissimos, rem odio corporis. Velit corporis minus necessitatibus cupiditate veritatis officia! Rerum, recusandae eum magnam praesentium autem quidem tenetur!</p>
+    
+    <script>
+        // 이벤트
+        // 1) 함수로 행동 정의 + html 속성으로 등록
+        function clicker(){
+            alert("버튼을 클릭하셨습니다")
+            document.getElementById("text").innerHTML="텍스트ㅡㅡㅡㅡㅡㅡㅡㅡㅡㅡ"
+        }
+
+        // 2) 이벤트리스너 : 이벤트가 발생했을 때, 그 처리를 담당하는 함수
+        //1. 이벤트 적용할 요소 당겨오기
+        let bt=document.getElementById("para_button");
+        //2. 요소에 이벤트 적용(addEvenListener 함수 사용)
+        bt.addEventListener("click", show);     //("이벤트명", 실행할 함수)
+        //3. 적용할 이벤트 정의(함수로 적용)
+        function show(){
+            let para=document.getElementById("para");
+            para.style.display="block"
+        }
+    </script>
+</body>
+</html>

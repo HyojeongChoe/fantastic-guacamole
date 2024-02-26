@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <form> 태그 : 입력의 양식 정의 -->
+    <form>
+        <!-- 여기 안에 여러가지 입력칸들을 넣음-->
+        <!-- input 태그 :type 속성값에 따라 입력형태가 달라짐
+        
+            type 디폴트 값은 text -->
+        <input type="text"/><br>
+        <input type="submit"/><br>
+        <input type="file"/><br>
+        <input type="button"/><br>
+        <input type="password"/><br>
+        <input type="color"/><br>
+        <input type="date"/><br>
+        <input type="range"/><br>
+        <input type="checkbox"/><br>
+        <input type="radio"/><br>
+        
+        <!-- 체크박스와 라디오-->
+        <!-- <label>태그 : 입력값 설명, 클릭했을 때에 연결되어있는 input에 포커싱 
+            label 지정해주고 input에 id값 적용-->
+        <p>성별</p>     <!-- 라디오로 적용-->
+        <input type="radio" id="male" name="gender" value="male">
+        <label for="male">남성</label>
+        <input name="gender" id="female" type="radio" value="female">
+        <label for="female">여성</label>
+
+
+        <p>취미</p>     <!-- 체크박스로 적용-->
+        <input type ="checkbox" id="sports" name="hobby" value="sports">
+        <label for="sports">야구보기</label>
+        <input type ="checkbox" id="book" name="hobby" value="book">
+        <label for="book">독서</label>
+        <input type ="checkbox" id="dopamine" name="hobby" value="dopamine">
+        <label for="dopamine">유튜브</label>
+        <input type ="checkbox" id="drinking" name="hobby" value="drinking">
+        <label for="drinking">술</label>
+
+        
+
+        
+    </form>
+</body>
+</html>

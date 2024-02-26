@@ -1,0 +1,6 @@
+mysql download
+
+압축파일 안에 .jar
+
+webap -> WEB_INF -> lib 안에 복사
+

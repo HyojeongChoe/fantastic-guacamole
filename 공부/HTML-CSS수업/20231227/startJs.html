@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <script src="javascript.js"></script> -->
+</head>
+
+<body>
+    <p id="chj">최효정</p>
+    <!--html 주석-->
+    <script>
+        //JavaScript 주석
+        /*
+        여러줄 걸쳐서 주석은 이렇게 
+        about;blank
+        clear()
+        */
+
+        // * 자바스크립트 코드 적용 방법
+        // 1. 내부 js: <script> 태그 추가해서 js 코드 포함시키는 방법
+        // 2. 외부 js: .js 파일을 만들어두고 파일에 포함시키는 방법
+
+        // 출력문(4가지)
+        alert("경고창 출력");
+        console.log("콘솔상에서 출력");
+        console.log("999*999의 결과는 " + 999*999+ "입니다.")
+
+        console.log(`999*999=${999*999}입니다.`)    //달러 표시는 중괄호 앞에
+        //자바스크립트로 html 페이지에 직접 출력할 때 사용(디버깅용)
+        document.write("html 페이지 상 출력")
+        //innerHTML
+        let st = document.getElementById("chj")   //st변수 - id가 "chj"인 요소 연결
+        st.innerHTML = "변경된 최효정"
+
+        // 자료형 (Number, String, Boolean)
+        // 변수 및 상수 선언(let, const)
+        let num=99*99;
+        const ch="ㅋㅋㅋ";
+        // ch="ㅎㅎㅎ";     -> 상수의 경우에는 값 변경 불가능
+
+        console.log(num)
+        console.log(ch)
+        
+
+
+    </script>
+</body>
+
+</html>

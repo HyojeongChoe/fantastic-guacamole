@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //객체를 아래처럼 생성하라.
+        //필드: 1-5과목 성적(배열), good(0으로 초기화)
+        let grade = {
+            score: [0, 0, 0, 0, 0],
+            good: 0,
+
+            //과락여부 판단 메서드, 해당과목성적이 40점 이상이면 good에 +1
+            subject_score: function (sc) {
+                if (sc >= 40) {
+                    this.good++;
+                }
+            },
+            //총평균이 60점 이상이면 good에 1추가
+            sum_score: function () {
+                let avg = (this.score[0] + this.score[1] + this.score[2] + this.score[3] + this.score[4]) / this.score.length;
+                if (avg >= 60) {
+                    this.good++;
+                }
+            },
+            //print() 모든 과목의 점수와 평균 출력하고, 합불여부
+            print: function () {
+                let avg = (this.score[0] + this.score[1] + this.score[2] + this.score[3] + this.score[4]) / this.score.length;
+
+                for (let i = 0; i < this.score.length; i++) {
+                    console.log(`${i + 1}번째 과목:${this.score[i]}점`)
+                }
+                console.log(`총평균${avg}점`)
+                if (this.good >= 6) {
+                    console.log("합격")
+                }
+                else {
+                    console.log("불합격")
+                }
+            }
+        }
+
+        // 각 과목의 점수를 입력
+        for (let i = 0; i < grade.score.length; i++) {
+            grade.score[i] = Number(prompt(`${i + 1}번째 과목 점수를 입력하세요.`, 0));
+            // 각 과목별로 subject_score 호출
+            grade.subject_score(grade.score[i]);
+        }
+        grade.sum_score();
+        grade.print();
+
+        // grade.score[0] =Number(prompt("첫번째 과목 점수를 입력하세요.",0))
+        // grade.score[1]=Number(prompt("두번째 과목 점수를 입력하세요.",0))
+        // grade.score[2]=Number(prompt("세번째 과목 점수를 입력하세요.",0))
+        // grade.score[3]=Number(prompt("네번째 과목 점수를 입력하세요.",0))
+        // grade.score[4]=Number(prompt("다섯번째 과목 점수를 입력하세요.",0))
+
+        // grade.subject_score();
+
+
+
+    </script>
+</body>
+
+</html>

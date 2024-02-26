@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        //이름, 나이, 성별 입력받기
+        let name = prompt("이름을 입력하세요.", "ex)홍길동");
+        let input = prompt("나이를 입력하세요.");
+        let age = Number(input);  //string 타입 age로 형변환
+        let tf = confirm("남성이면 확인, 여성이면 취소를 눌러주세요.");
+
+        let gender;
+        if (tf === true) {
+            gender = "남성";
+        }
+        else {
+            gender = "여성";
+        }
+        
+        //배열 선언, 값 삽입
+        let introduce = [];
+        introduce.push(name);
+        introduce.push(age);
+        introduce.push(gender);
+
+        //배열 값 순차적으로 출력
+        document.write(`이름: ${introduce[0]}<br>`);
+        document.write(`나이: ${introduce[1]}<br>`);
+        document.write(`성별: ${introduce[2]}<br>`);
+
+        //console.log() :: 콘솔창 출력 - 개행"\n"
+        //document.write() :: html 바디에 출력 - 개행 <br>
+    </script>
+</body>
+
+</html>
